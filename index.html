@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .timer-container {
+            margin-top: 20px;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 80px;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        #time-display {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Countdown Timer</h1>
+
+    <!-- Input Section -->
+    <div class="timer-container">
+        <input type="number" id="minutes" placeholder="Minutes" min="0" />
+        <input type="number" id="seconds" placeholder="Seconds" min="0" max="59" />
+    </div>
+
+    <!-- Buttons for Start, Pause, and Reset -->
+    <div>
+        <button id="start" class="button">Start</button>
+        <button id="pause" class="button">Pause</button>
+        <button id="reset" class="button">Reset</button>
+    </div>
+
+    <!-- Timer Display -->
+    <div id="time-display">00:00</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
